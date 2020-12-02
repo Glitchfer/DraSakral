@@ -1,6 +1,6 @@
 <template>
   <b-container fluid id="home">
-    <h1>HOME</h1>
+    <h1>DRA Sakral</h1>
   </b-container>
 </template>
 
