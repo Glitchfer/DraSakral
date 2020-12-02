@@ -45,10 +45,10 @@ export default {
 }
 #home img:nth-child(2) {
   position: absolute;
-  top: 10%;
+  top: 40px;
   z-index: 1;
   opacity: 0.6;
-  width: 40%;
+  width: 500px;
 }
 #home h3,
 #home h1 {
