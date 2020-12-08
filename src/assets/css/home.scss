@@ -174,8 +174,7 @@ nav {
     }
   }
 }
-
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   #home {
     nav {
       .nav1 {
@@ -260,41 +259,39 @@ nav {
 
     .vector1 {
       img:nth-child(1) {
-        width: 42%;
+        width: 220px;
         left: -60px;
-        top: -55px;
+        top: -85px;
       }
       img:nth-child(2) {
-        width: 50%;
+        width: 200px;
         top: -50px;
-        right: -90px;
+        right: -80px;
         left: unset;
         bottom: unset;
         transform: rotateZ(180deg);
       }
       img:nth-child(3) {
         bottom: -50px;
-        width: 95%;
-        // width: 450px;
+        width: 410px;
         height: 410px;
         right: -60px;
       }
       img:nth-child(4) {
-        width: 70%;
-        // width: 350px;
+        width: 320px;
         bottom: 15px;
-        right: 30px;
+        right: 20px;
       }
       img:nth-child(5) {
-        width: 35%;
-        top: -40px;
-        right: -35px;
+        width: 170px;
+        top: -55px;
+        right: -45px;
         border-radius: 50%;
         left: unset;
       }
       img:nth-child(6) {
-        width: 15%;
-        top: 105px;
+        width: 75px;
+        top: 80px;
         left: 6%;
       }
     }
@@ -305,7 +302,7 @@ nav {
       h1 {
         width: 10em;
         position: absolute;
-        top: 140px;
+        top: 120px;
         left: 10%;
         font-size: 38px;
         line-height: 38px;
@@ -313,7 +310,7 @@ nav {
       p {
         position: absolute;
         left: 10%;
-        top: 240px;
+        top: 200px;
         width: 55%;
         height: 250px;
         overflow: auto;
@@ -323,7 +320,164 @@ nav {
         }
       }
       button {
-        top: 520px;
+        top: 390px;
+        bottom: unset;
+        font-size: 10px;
+        padding: 7px 10px;
+        border-radius: 20px;
+        left: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #home {
+    nav {
+      .nav1 {
+        display: none !important;
+      }
+      .nav2 {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        display: flex !important;
+        width: 50%;
+        height: 100%;
+        background: white;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        transform: translateX(100%);
+        overflow: unset;
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: 14px;
+          border: 2px solid white;
+          padding: 5px 10px;
+          font-weight: 600;
+
+          border-radius: 5px;
+          width: 60%;
+          margin: 10px 0;
+
+          &:hover {
+            background: #ffffff;
+            font-weight: bold;
+            color: rgb(34, 29, 29);
+            font-size: 14px;
+            border: 2px solid rgb(7, 7, 7);
+          }
+          &:active {
+            background: #443841;
+            font-weight: bold;
+            color: white;
+            border: 1px solid black;
+          }
+        }
+
+        .setting {
+          display: block;
+          background: #fdb023;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 45%;
+          left: -10px;
+          transform: rotate(45deg);
+          overflow: hidden;
+          mix-blend-mode: multiply;
+          transition: 0.5s transform;
+          border-radius: 50% 50% 50% 0;
+          border: 2px solid rgb(255, 255, 255);
+          cursor: pointer;
+
+          &::before {
+            content: '';
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            top: -25px;
+            left: 5px;
+            background: rgb(255, 255, 255);
+            transform: rotate(-45deg);
+          }
+
+          &:hover {
+            background: #000000;
+          }
+        }
+      }
+    }
+
+    .vector1 {
+      img:nth-child(1) {
+        width: 220px;
+        left: -60px;
+        top: -85px;
+      }
+      img:nth-child(2) {
+        width: 200px;
+        top: -50px;
+        right: -80px;
+        left: unset;
+        bottom: unset;
+        transform: rotateZ(180deg);
+      }
+      img:nth-child(3) {
+        bottom: -50px;
+        width: 410px;
+        height: 410px;
+        right: -60px;
+      }
+      img:nth-child(4) {
+        width: 320px;
+        bottom: 15px;
+        right: 20px;
+      }
+      img:nth-child(5) {
+        width: 170px;
+        top: -55px;
+        right: -45px;
+        border-radius: 50%;
+        left: unset;
+      }
+      img:nth-child(6) {
+        width: 75px;
+        top: 80px;
+        left: 6%;
+      }
+    }
+
+    .titleShop {
+      width: 85%;
+      padding: 0 5px 0 20px;
+      h1 {
+        width: 10em;
+        position: absolute;
+        top: 120px;
+        left: 10%;
+        font-size: 38px;
+        line-height: 38px;
+      }
+      p {
+        position: absolute;
+        left: 10%;
+        top: 200px;
+        width: 55%;
+        height: 250px;
+        overflow: auto;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+      button {
+        top: 390px;
         bottom: unset;
         font-size: 10px;
         padding: 7px 10px;
@@ -433,16 +587,15 @@ nav {
       }
       img:nth-child(3) {
         bottom: -50px;
-        width: 95%;
-        // width: 450px;
-        height: 410px;
+        width: 90%;
+        height: 350px;
         right: -60px;
       }
       img:nth-child(4) {
-        width: 70%;
-        // width: 350px;
-        bottom: 15px;
-        right: 30px;
+        // width: 70%;
+        width: 250px;
+        bottom: 25px;
+        right: 10px;
       }
       img:nth-child(5) {
         width: 35%;
@@ -453,7 +606,7 @@ nav {
       }
       img:nth-child(6) {
         width: 15%;
-        top: 105px;
+        top: 80px;
         left: 6%;
       }
     }
@@ -464,7 +617,7 @@ nav {
       h1 {
         width: 10em;
         position: absolute;
-        top: 140px;
+        top: 110px;
         left: 10%;
         font-size: 200%;
         line-height: 38px;
@@ -472,7 +625,7 @@ nav {
       p {
         position: absolute;
         left: 10%;
-        top: 240px;
+        top: 200px;
         width: 55%;
         height: 250px;
         overflow: auto;
@@ -482,7 +635,7 @@ nav {
         }
       }
       button {
-        top: 520px;
+        top: 470px;
         bottom: unset;
         font-size: 10px;
         padding: 7px 10px;
