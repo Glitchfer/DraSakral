@@ -37,10 +37,10 @@
         <span> OFFICIAL WEBSITE</span>
       </h1>
       <p>
-        Menjual berbagai macam jenis dupa atau wewangian asli dari kayu gaharu
-        berkualitas, serta berbagai macam produk lainnya. Banyak promo menarik
-        yang dapat anda temukan di toko kami. Segera temukan produk yang anda
-        inginkan sebelum kehabisan. Selamat berbelanja. ^ ^
+        Menyediakan berbagai macam jenis dupa atau wewangian asli dari kayu
+        gaharu berkualitas, serta berbagai macam produk lainnya. Banyak promo
+        menarik yang dapat anda temukan di toko kami. Segera temukan produk yang
+        anda inginkan sebelum kehabisan. Selamat berbelanja. ^ ^
       </p>
       <button @click="shopNow()">SHOPPING NOW</button>
     </div>
